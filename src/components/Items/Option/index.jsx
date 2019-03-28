@@ -61,7 +61,7 @@ class Option extends Component {
                       //     </code>
                       //   </pre>
                       // </div>
-                      <SyntaxHighlighter language="javascript" style={okaidia}>{option}</SyntaxHighlighter>
+                      <SyntaxHighlighter language="javascript" showLineNumbers style={okaidia}>{option}</SyntaxHighlighter>
                     )
                     : ''
             }

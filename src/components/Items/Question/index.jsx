@@ -10,16 +10,20 @@ const Question = (props) => {
     <div className={Cl.container}>
       <Wrapper>
         {
-         questions.map(({ type, option, question }) => (
+         questions.map(({ type, option, question }, index) => (
            <Wrapper key={option}>
-             <h1 className={Cl.question}>{question}</h1>
+             <h1 className={Cl.question}>
+               { `${index + 1}) ` }
+               { question }
+             </h1>
              {
                 option.map(opt => (
                   <Option option={opt} type={type} key={opt} className={Cl.option} />
                 ))
              }
            </Wrapper>
-         ))}
+         ))
+         }
       </Wrapper>
     </div>
   );
