@@ -7,35 +7,46 @@ class Option extends Component {
   constructor() {
     super();
     this.state = {
-      active: false,
       circleClass: Cl.circle,
       innerClass: Cl.inner,
       containerCLass: Cl.container,
     };
   }
 
-    selected = () => {
-      const { active } = this.state;
-      if (active) {
+    selected = (arg, answer) => {
+      if (arg !== answer) {
         this.setState({
-          active: false,
-          circleClass: Cl.circle,
-          innerClass: Cl.inner,
-          containerCLass: Cl.container,
+          circleClass: `${Cl.circle} ${Cl.slim}`,
+          innerClass: `${Cl.inner} ${Cl.incInner}`,
+          containerCLass: `${Cl.container} ${Cl.false}`,
         });
       } else {
         this.setState({
-          active: true,
           circleClass: `${Cl.circle} ${Cl.slim}`,
           innerClass: `${Cl.inner} ${Cl.incInner}`,
-          containerCLass: `${Cl.container} ${Cl.selected}`,
+          containerCLass: `${Cl.container} ${Cl.true}`,
         });
       }
+      // if (active) {
+      //   this.setState({
+      //     active: false,
+      //     circleClass: Cl.circle,
+      //     innerClass: Cl.inner,
+      //     containerCLass: Cl.container,
+      //   });
+      // } else {
+      //   this.setState({
+      //     active: true,
+      //     circleClass: `${Cl.circle} ${Cl.slim}`,
+      //     innerClass: `${Cl.inner} ${Cl.incInner}`,
+      //     containerCLass: `${Cl.container} ${Cl.selected}`,
+      //   });
+      // }
     }
 
     render() {
       const { circleClass, innerClass, containerCLass } = this.state;
-      const { option, type = 'text' } = this.props;
+      const { option, type = 'text', answer } = this.props;
       return (
         <div>
           {
@@ -43,10 +54,10 @@ class Option extends Component {
                   ? (
                     <div className={Cl.inlineBlock}>
                       <div className={containerCLass}>
-                        <div className={circleClass} onClick={this.selected} onKeyPress={this.selected} role="button" tabIndex={0}>
+                        <div className={circleClass}>
                           <div className={innerClass} />
                         </div>
-                        <div className={Cl.option} onClick={this.selected} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
+                        <div className={Cl.option} onClick={() => this.selected(option, answer)} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
                       </div>
                     </div>
                   )
@@ -69,6 +80,7 @@ class Option extends Component {
 Option.propTypes = {
   option: PropTypes.arrayOf.isRequired,
   type: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired,
 };
 
 export default Option;

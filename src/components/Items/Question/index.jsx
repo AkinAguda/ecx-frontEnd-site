@@ -7,13 +7,15 @@ const Question = (props) => {
   const { questions } = props;
   return (
     <div className={Cl.container}>
-      {questions.map(({ type, option, question }) => (
+      {questions.map(({
+        type, option, question, answerIndex,
+      }) => (
         <div key={option}>
           <h1 className={Cl.question}>{question}</h1>
           {
                 option.map(opt => (
                   <div className={Cl.option}>
-                    <Option option={opt} type={type} key={opt} />
+                    <Option option={opt} type={type} key={opt} answer={option[answerIndex]} />
                   </div>
                 ))
             }

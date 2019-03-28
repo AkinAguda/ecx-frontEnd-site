@@ -49,3 +49,21 @@
 .inlineBlock{
     display: inline-block;
 }
+.false{
+    animation: false 0.2s;
+    border: 2px solid red;
+}
+.true{
+    animation: true 0.3s;
+    border: 2px solid green;
+}
+
+@keyframes true {
+    50%{box-shadow: 0 0 16px green}
+    100%{box-shadow: 0 0 16px green}
+}
+
+@keyframes false {
+    50%{box-shadow: 0 0 16px red}
+    100%{box-shadow: 0 0 16px red}
+}
