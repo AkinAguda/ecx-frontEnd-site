@@ -1,14 +1,18 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-// import Cl from './index.module.css';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import Question from './components/Items/Question';
-import { week1 } from './utils';
+import Routes from './components/routes';
+
 
 class App extends Component {
   render() {
     return (
-      <Question questions={week1} />
+      <BrowserRouter>
+        <div>
+          <Routes />
+        </div>
+      </BrowserRouter>
     );
   }
 }
