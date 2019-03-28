@@ -56,3 +56,12 @@
    font-family: 'Merienda','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
+
+
+@media (max-width:580px)
+{
+    .containerSnippet
+    {
+        font-size: 10px;
+    }
+}
