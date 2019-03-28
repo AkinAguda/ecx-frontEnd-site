@@ -19,6 +19,8 @@ export const week1 = [
     question: 'Is this JSX?',
     type: 'snippet',
     option: [snippet1],
+    // we still need the options
+
   },
   {
     question: 'What is the Full meaning of HTML?',
