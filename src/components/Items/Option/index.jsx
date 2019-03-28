@@ -46,7 +46,7 @@ class Option extends Component {
                         <div className={circleClass} onClick={this.selected} onKeyPress={this.selected} role="button" tabIndex={0}>
                           <div className={innerClass} />
                         </div>
-                        <div className={Cl.option} onClick={this.selected} nClick={this.selected} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
+                        <div className={Cl.option} onClick={this.selected} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
                       </div>
                     </div>
                   )
