@@ -1,0 +1,13 @@
+.Container,.Body
+{
+    padding:5px;
+    margin:5px;
+}
+
+.Body
+{
+    font-family: 'Merienda','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+
+}
