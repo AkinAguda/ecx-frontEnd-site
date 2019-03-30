@@ -1,6 +1,28 @@
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container
+{
+    padding:10px;
+}
+
+.container h1
+{
+    background-color: #39ebeb;
+    padding:10px;
+    font-family: 'Cinzel','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
 .container > div{
     margin: 15px;
 }
 .option{
     margin: 20px 0;
 }
+

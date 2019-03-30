@@ -1,5 +1,5 @@
-const snippet1 = `
-import React, { Component } from 'react';
+/* eslint-disable linebreak-style */
+const snippet1 = `import React, { Component } from 'react';
 import Header from './components/Header';
 import Question from './components/Question/Question';
 class App extends Component {
@@ -14,12 +14,31 @@ class App extends Component {
 }
 
 export default App;`;
+
+const snippet2 = `import React, { Component } from 'react';
+import Header from './components/Header';
+import Question from './components/Question/Question';
+
+ App.prototype.Component = 
+ {
+    render()
+    {
+      el.innerHTML = " <div className='App'>
+      <Header />
+      <Question />
+      </div> ";
+    }
+ }
+
+export default App;`;
+
 export const week1 = [
   {
     question: 'Is this JSX?',
     type: 'snippet',
-    option: [snippet1],
     answerIndex: 0,
+    option: [snippet1, snippet2],
+    // we still need the options
   },
   {
     question: 'What is the Full meaning of HTML?',

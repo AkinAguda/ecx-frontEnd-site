@@ -2,25 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Cl from './Question.module.css';
 import Option from '../Option';
+import Wrapper from '../../HOCs/Wrapper';
 
 const Question = (props) => {
   const { questions } = props;
   return (
     <div className={Cl.container}>
-      {questions.map(({
-        type, option, question, answerIndex,
-      }) => (
-        <div key={option}>
-          <h1 className={Cl.question}>{question}</h1>
-          {
+      <Wrapper>
+        {
+         questions.map(({ type, option, question, answerIndex }, index) => (
+           <Wrapper key={option}>
+             <h1 className={Cl.question}>
+               { `${index + 1}) ` }
+               { question }
+             </h1>
+             {
                 option.map(opt => (
                   <div className={Cl.option}>
                     <Option option={opt} type={type} key={opt} answer={option[answerIndex]} />
                   </div>
                 ))
-            }
-        </div>
-      ))}
+             }
+           </Wrapper>
+         ))
+         }
+      </Wrapper>
     </div>
   );
 };
