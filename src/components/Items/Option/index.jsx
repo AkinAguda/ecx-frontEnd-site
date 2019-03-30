@@ -1,6 +1,8 @@
 /* eslint-disable no-nested-ternary */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Cl from './Option.module.css';
 
 class Option extends Component {
@@ -52,13 +54,14 @@ class Option extends Component {
                   )
                   : type === 'snippet'
                     ? (
-                      <div className={Cl.containerSnippet}>
-                        <pre>
-                          <code>
-                            {option}
-                          </code>
-                        </pre>
-                      </div>
+                      // <div className={Cl.containerSnippet}>
+                      //   <pre>
+                      //     <code>
+                      //       {option}
+                      //     </code>
+                      //   </pre>
+                      // </div>
+                      <SyntaxHighlighter className={Cl.containerSnippet} language="javascript" showLineNumbers style={okaidia}>{option}</SyntaxHighlighter>
                     )
                     : ''
             }
