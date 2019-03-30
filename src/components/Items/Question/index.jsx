@@ -18,7 +18,9 @@ const Question = (props) => {
              </h1>
              {
                 option.map(opt => (
-                  <Option option={opt} type={type} key={opt} className={Cl.option} />
+                  <div className={Cl.option}>
+                    <Option option={opt} type={type} key={opt} />
+                  </div>
                 ))
              }
            </Wrapper>
