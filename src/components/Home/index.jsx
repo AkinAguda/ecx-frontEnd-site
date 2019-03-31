@@ -15,8 +15,8 @@ const Home = () => (
         you have learnt so far.
       </p>
       <Link to="/week-one">Week1</Link>
-    <br />
-    <Link to="/week-two">Week2</Link>
+      <br />
+      <Link to="/week-two">Week2</Link>
     </div>
   </Wrapper>
 

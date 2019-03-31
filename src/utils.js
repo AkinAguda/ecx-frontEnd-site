@@ -33,18 +33,24 @@ import Question from './components/Question/Question';
 export default App;`;
 
 export const week1 = [
+  // {
+  //   question: 'Is this JSX?',
+  //   type: 'snippet',
+  //   answerIndex: 0,
+  //   option: [snippet1, snippet2],
+  //   // we still need the options
+  // },
   {
-    question: 'Is this JSX?',
-    type: 'snippet',
+    question: 'What is the Full meaning of HTML?',
+    option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE', 'HYPERTEXT MAKEUP LANGUAGE', 'HYPEDTEXT MARKUP LANGUAGE'],
     answerIndex: 0,
-    option: [snippet1, snippet2],
-    // we still need the options
   },
   {
     question: 'What is the Full meaning of HTML?',
     option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE'],
     answerIndex: 0,
   },
+  
 ];
 
 export const week2 = [

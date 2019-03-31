@@ -10,14 +10,15 @@ class Option extends Component {
   constructor() {
     super();
     this.state = {
+      selected: false,
       circleClass: Cl.circle,
       innerClass: Cl.inner,
       containerCLass: Cl.container,
     };
   }
 
-    selected = (arg, answer) => {
-      if (arg !== answer) {
+    selected = (option, answer) => {
+      if (option !== answer) {
         this.setState({
           circleClass: `${Cl.circle} ${Cl.slim}`,
           innerClass: `${Cl.inner} ${Cl.incInner}`,
@@ -60,7 +61,7 @@ class Option extends Component {
                         <div className={circleClass}>
                           <div className={innerClass} />
                         </div>
-                        <div className={Cl.option} onClick={() => this.selected(option, answer)} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
+                        <div className={Cl.option} onClick={this.selected.bind(this, option, answer)} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
                       </div>
                     </div>
                   )
