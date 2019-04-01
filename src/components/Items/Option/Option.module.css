@@ -32,9 +32,11 @@
     font-weight: 450; 
 }
 .containerSnippet{
+    border: 2px solid rgb(39, 40, 34);
     display: flex;
     background-color: rgb(26, 8, 26);
     transition: 0.2ms;
+    font-size: 18px !important;
 }
 .containerSnippet pre{
     color: rgba(221, 211, 211, 0.911);
