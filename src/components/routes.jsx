@@ -12,4 +12,17 @@ const Routes = () => (
   </div>
 );
 
+export const Paths = [{
+  pathname: '/',
+},
+{
+  pathname: '/week-one',
+  hash: '#test',
+},
+{
+  pathname: '/week-two',
+  hash: '#test',
+},
+];
+
 export default Routes;
