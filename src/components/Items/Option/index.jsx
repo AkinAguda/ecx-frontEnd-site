@@ -35,11 +35,13 @@ class Option extends Component {
       }
     }
 
-    flem = () => console.log('flem');
-
     render() {
-      const { circleClass, innerClass, containerCLass, snippetClass } = this.state;
-      const { option, type = 'text', answer, language } = this.props;
+      const {
+        circleClass, innerClass, containerCLass, snippetClass,
+      } = this.state;
+      const {
+        option, type = 'text', answer, language,
+      } = this.props;
       return (
         <div>
           {
@@ -56,7 +58,15 @@ class Option extends Component {
                   )
                   : type === 'snippet'
                     ? (
-                      <SyntaxHighlighter className={snippetClass} language={language} showLineNumbers style={okaidia} onClick={() => this.selected(option, answer)}>{option}</SyntaxHighlighter>
+                      <SyntaxHighlighter
+                        className={snippetClass}
+                        language={language}
+                        showLineNumbers
+                        style={okaidia}
+                        onClick={() => this.selected(option, answer)}
+                      >
+                        {option}
+                      </SyntaxHighlighter>
                     )
                     : ''
             }
@@ -68,6 +78,7 @@ Option.propTypes = {
   option: PropTypes.arrayOf.isRequired,
   type: PropTypes.string.isRequired,
   answer: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
 };
 
 export default Option;

@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+
+// Routes
+
+
 const snippet1 = '<h1>Hey there</h1>';
 const snippet2 = '<head>Hey there</head>';
 const snippet3 = '<p>Hello friend</p>';
