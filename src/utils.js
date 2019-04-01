@@ -1,45 +1,18 @@
 /* eslint-disable linebreak-style */
-const snippet1 = `import React, { Component } from 'react';
-import Header from './components/Header';
-import Question from './components/Question/Question';
-class App extends Component {
-    render() {
-    return (
-        <div className="App">
-        <Header />
-        <Question />
-        </div>
-    );
-    }
-}
-
-export default App;`;
-
-const snippet2 = `import React, { Component } from 'react';
-import Header from './components/Header';
-import Question from './components/Question/Question';
-
- App.prototype.Component = 
- {
-    render()
-    {
-      el.innerHTML = " <div className='App'>
-      <Header />
-      <Question />
-      </div> ";
-    }
- }
-
-export default App;`;
+const snippet1 = '<h1>Hey there</h1>';
+const snippet2 = '<head>Hey there</head>';
+const snippet3 = '<p>Hello friend</p>';
+const snippet4 = '<ul>Hey ECXM</ul>';
 
 export const week1 = [
-  // {
-  //   question: 'Is this JSX?',
-  //   type: 'snippet',
-  //   answerIndex: 0,
-  //   option: [snippet1, snippet2],
-  //   // we still need the options
-  // },
+  {
+    question: 'Which one of these is a header?',
+    type: 'snippet',
+    answerIndex: 0,
+    language: 'html',
+    option: [snippet1, snippet2, snippet3, snippet4],
+    // we still need the options
+  },
   {
     question: 'What is the Full meaning of HTML?',
     option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE', 'HYPERTEXT MAKEUP LANGUAGE', 'HYPEDTEXT MARKUP LANGUAGE'],
@@ -50,7 +23,6 @@ export const week1 = [
     option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE'],
     answerIndex: 0,
   },
-  
 ];
 
 export const week2 = [

@@ -10,10 +10,10 @@ class Option extends Component {
   constructor() {
     super();
     this.state = {
-      selected: false,
       circleClass: Cl.circle,
       innerClass: Cl.inner,
       containerCLass: Cl.container,
+      snippetClass: Cl.containerSnippet,
     };
   }
 
@@ -23,34 +23,23 @@ class Option extends Component {
           circleClass: `${Cl.circle} ${Cl.slim}`,
           innerClass: `${Cl.inner} ${Cl.incInner}`,
           containerCLass: `${Cl.container} ${Cl.false}`,
+          snippetClass: `${Cl.containerSnippet} ${Cl.false}`,
         });
       } else {
         this.setState({
           circleClass: `${Cl.circle} ${Cl.slim}`,
           innerClass: `${Cl.inner} ${Cl.incInner}`,
           containerCLass: `${Cl.container} ${Cl.true}`,
+          snippetClass: `${Cl.containerSnippet} ${Cl.true}`,
         });
       }
-      // if (active) {
-      //   this.setState({
-      //     active: false,
-      //     circleClass: Cl.circle,
-      //     innerClass: Cl.inner,
-      //     containerCLass: Cl.container,
-      //   });
-      // } else {
-      //   this.setState({
-      //     active: true,
-      //     circleClass: `${Cl.circle} ${Cl.slim}`,
-      //     innerClass: `${Cl.inner} ${Cl.incInner}`,
-      //     containerCLass: `${Cl.container} ${Cl.selected}`,
-      //   });
-      // }
     }
 
+    flem = () => console.log('flem');
+
     render() {
-      const { circleClass, innerClass, containerCLass } = this.state;
-      const { option, type = 'text', answer } = this.props;
+      const { circleClass, innerClass, containerCLass, snippetClass } = this.state;
+      const { option, type = 'text', answer, language } = this.props;
       return (
         <div>
           {
@@ -67,14 +56,7 @@ class Option extends Component {
                   )
                   : type === 'snippet'
                     ? (
-                      // <div className={Cl.containerSnippet}>
-                      //   <pre>
-                      //     <code>
-                      //       {option}
-                      //     </code>
-                      //   </pre>
-                      // </div>
-                      <SyntaxHighlighter className={Cl.containerSnippet} language="javascript" showLineNumbers style={okaidia}>{option}</SyntaxHighlighter>
+                      <SyntaxHighlighter className={snippetClass} language={language} showLineNumbers style={okaidia} onClick={() => this.selected(option, answer)}>{option}</SyntaxHighlighter>
                     )
                     : ''
             }
