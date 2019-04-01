@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Paths } from '../../routes';
+import { paths } from '../../routes';
 import Cl from './SideDrawer.module.css';
 
-class SideDrawer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-    };
-  }
-
-  render() {
-    return (
-      <div className={Cl.SideDrawer}>
-        hey
-      </div>
-    );
-  }
-}
+const SideDrawer = ({ isOpen }) => {
+  return (
+    <div className={`${Cl.SideDrawer} ${isOpen ? Cl.open : Cl.close}`}>
+      {
+            paths.map(({ pathname, hash, name }) => (
+              <Link to={pathname}
+              >
+                { name }
+              </Link>
+            ))
+        }
+    </div>
+  );
+};
 
 export default SideDrawer;

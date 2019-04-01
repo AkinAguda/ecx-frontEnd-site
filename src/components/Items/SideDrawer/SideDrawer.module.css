@@ -1,0 +1,17 @@
+.SideDrawer{
+    background-color: #1A0325;
+    z-index: 10000000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: red;
+    transition: 0.3s ease-in-out;
+    height: 100vh;
+}
+.open{
+    width: 80vw;
+}
+.close{
+    width: 0;
+}

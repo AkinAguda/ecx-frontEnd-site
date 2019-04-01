@@ -35,8 +35,6 @@ class Option extends Component {
       }
     }
 
-    flem = () => console.log('flem');
-
     render() {
       const {
         circleClass, innerClass, containerCLass, snippetClass,
