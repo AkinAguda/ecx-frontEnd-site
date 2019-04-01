@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const snippet1 = `import React, { Component } from 'react';
 import Header from './components/Header';
 import Question from './components/Question/Question';
@@ -32,22 +33,30 @@ import Question from './components/Question/Question';
 export default App;`;
 
 export const week1 = [
+  // {
+  //   question: 'Is this JSX?',
+  //   type: 'snippet',
+  //   answerIndex: 0,
+  //   option: [snippet1, snippet2],
+  //   // we still need the options
+  // },
   {
-    question: 'Is this JSX?',
-    type: 'snippet',
-    option: [snippet1, snippet2],
-    // we still need the options
-
+    question: 'What is the Full meaning of HTML?',
+    option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE', 'HYPERTEXT MAKEUP LANGUAGE', 'HYPEDTEXT MARKUP LANGUAGE'],
+    answerIndex: 0,
   },
   {
     question: 'What is the Full meaning of HTML?',
     option: ['HYPERTEXT MARKUP LANGUAGE', 'HYPERTEXT MAKE LANGUAGE'],
+    answerIndex: 0,
   },
+  
 ];
 
 export const week2 = [
   {
     question: 'Is this me?',
     option: ['one', 'two'],
+    answerIndex: 1,
   },
 ];
