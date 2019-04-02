@@ -50,8 +50,16 @@ html, body{
     {
        width:60%;
        margin:auto;
+       margin-left:15vw;
        font-size:20px !important;
     }
+
+    .options
+    {
+        margin: 20px 0 20px 15vw !important;
+        width:50vw;
+    }
+
 
     
 }
