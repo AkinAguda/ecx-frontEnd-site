@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Header from '../Items/Nav';
 import SideDrawer from '../Items/SideDrawer';
 import Question from '../Items/Question';
 import Wrapper from '../HOCs/Wrapper';
 import { week1 } from '../../utils';
-import PropTypes from 'prop-types';
 
 class weekOne extends Component {
   constructor(props) {
     super(props);
     const { isOpen } = this.props;
     this.state = {
-      isOpen: isOpen,
+      // eslint-disable-next-line react/no-unused-state
+      isOpen,
     };
   }
 

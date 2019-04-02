@@ -33,3 +33,14 @@ html, body{
     margin: 20px 0;
 }
 
+@media  (min-width:760px)
+{
+    .container
+    {
+       background-color: #1A0325;
+       margin-right:5vw;
+       border-top-right-radius: 10px;
+       margin-top:10px;
+    }
+}
+
