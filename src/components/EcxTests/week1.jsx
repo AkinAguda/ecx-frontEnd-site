@@ -22,7 +22,7 @@ class weekOne extends Component {
     return (
       <Wrapper>
         <Header open={openNav} close={closeNav} />
-        <SideDrawer isOpen={isOpen} />
+        <SideDrawer isOpen={isOpen} close={closeNav} />
         <Question questions={week1} />
       </Wrapper>
     );
