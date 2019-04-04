@@ -35,7 +35,6 @@
     margin: 10px 0;
     animation: appear 1.4s forwards;
     text-transform: uppercase;
-    transition: 0.2s;
 }
 
 .SideDrawer ul li a:hover{
@@ -70,5 +69,20 @@
     }
     .close{
         display: none;
+    }
+    .SideDrawer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+    .SideDrawer ul li a{
+        text-decoration: none;
+        padding: 15px 30px;
+        display: block;
+        opacity: 0;
+        margin: 10px 0;
+        animation: none;
+        opacity: 1;
+        text-transform: uppercase;
     }
 }
