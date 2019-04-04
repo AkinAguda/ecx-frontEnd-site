@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { paths } from '../../routes';
 import Cl from './SideDrawer.module.css';
 
@@ -9,7 +9,11 @@ const SideDrawer = ({ isOpen, close, permanent = false }) => {
       <ul>
         {
               paths.map(({ pathname, hash, name }) => (
-                <li><Link to={{ pathname, hash }} className={name === 'home' ? Cl.home : Cl.navLink} onClick={close}>{ name }</Link></li>
+                <li>
+                  <NavLink to={{ pathname, hash }} className={name === 'home' ? Cl.home : Cl.navLink} onClick={close} exact>
+                    { name }
+                  </NavLink>
+                </li>
               ))
           }
       </ul>

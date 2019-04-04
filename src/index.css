@@ -12,6 +12,11 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
-  
-  
-  
+  .active{
+    color: white;
+    background-color: rgb(43, 8, 59);
+    border-radius: 10px;
+  }
+  .active:hover{
+    
+  }

@@ -32,14 +32,22 @@
     padding: 15px 30px;
     display: block;
     opacity: 0;
+    margin: 10px 0;
     animation: appear 1.4s forwards;
     text-transform: uppercase;
+    transition: 0.2s;
 }
+
+.SideDrawer ul li a:hover{
+    color: red;
+}
+
 .home{
     background-color: rgb(71, 23, 8);
     border: 2px solid red;
     color: white;
 }
+
 @keyframes appear{
     100%{opacity: 1;}
 }
