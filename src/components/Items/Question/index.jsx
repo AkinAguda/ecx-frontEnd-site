@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Cl from './Question.module.css';
 import Option from '../Option';
+import SideDrawer from '../SideDrawer';
 import Wrapper from '../../HOCs/Wrapper';
 
 const Question = (props) => {
@@ -9,7 +10,12 @@ const Question = (props) => {
   return (
     <div className={Cl.container} id="test">
       <Wrapper>
-        {
+        {/* <div className={Cl.drawer}> */}
+        <SideDrawer isOpen permanent />
+        {/* </div> */}
+
+        <div className={Cl.rightSide}>
+          {
          questions.map(({
            type, option, question, answerIndex, language,
          }, index) => (
@@ -30,6 +36,8 @@ const Question = (props) => {
            </Wrapper>
          ))
          }
+        </div>
+
       </Wrapper>
     </div>
   );
