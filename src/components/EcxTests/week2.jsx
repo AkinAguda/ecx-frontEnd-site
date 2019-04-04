@@ -1,9 +1,7 @@
 import React from 'react';
-import Question from '../Items/Question';
 import { week2 } from '../../utils';
+import Week from '../Items/Week';
 
-const weekTwo = () => (
-  <Question questions={week2} />
-);
+const weekOne = () => <Week week={week2} />;
 
-export default weekTwo;
+export default weekOne;

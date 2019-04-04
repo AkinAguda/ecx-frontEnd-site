@@ -19,7 +19,7 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    // "rules": {
-    //     "linebreak-style": [2, "windows"],
-    // }
+    rules:{
+        "linebreak-style": 0
+      }
 };
