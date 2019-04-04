@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { paths } from '../../routes';
 import Cl from './SideDrawer.module.css';
 
-const SideDrawer = ({ isOpen }) => {
+const SideDrawer = ({ isOpen, close, permanent = false }) => {
   return (
-    <div className={`${Cl.SideDrawer} ${isOpen ? Cl.open : Cl.close}`}>
-      {
-            paths.map(({ pathname, hash, name }) => (
-              <Link to={pathname}
-              >
-                { name }
-              </Link>
-            ))
-        }
+    <div className={`${Cl.SideDrawer} ${isOpen ? Cl.open : Cl.close} ${permanent ? Cl.permanent : ''}`}>
+      <ul>
+        {
+              paths.map(({ pathname, hash, name }) => (
+                <li>
+                  <NavLink to={{ pathname, hash }} className={name === 'home' ? Cl.home : Cl.navLink} onClick={close} exact>
+                    { name }
+                  </NavLink>
+                </li>
+              ))
+          }
+      </ul>
     </div>
   );
 };

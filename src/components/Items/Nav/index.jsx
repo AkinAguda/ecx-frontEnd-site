@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import Cl from './Nav.module.css';
-import Logo from '../../../assets/brand.png';
+import Logo from '../../../assets/brand.svg';
 
 class Nav extends Component {
   state={

@@ -62,3 +62,11 @@
     50%{width: 25px;}
     100%{width: 11px;}
 }
+@media  (min-width:760px) {
+    .header{
+        z-index: 100;
+    }
+    .hamBurger{
+        display: none;
+    }
+}
