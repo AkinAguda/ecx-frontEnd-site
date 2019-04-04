@@ -9,9 +9,80 @@
     transition: 0.3s ease-in-out;
     height: 100vh;
 }
+.permanent {
+    display: none;
+}
 .open{
     width: 80vw;
 }
 .close{
     width: 0;
+}
+.close .navLink, .close .home{
+    display: none;
+}
+.SideDrawer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 75px 0 0 0;
+}
+
+.SideDrawer ul li a{
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+    opacity: 0;
+    margin: 10px 0;
+    animation: appear 1.4s forwards;
+    text-transform: uppercase;
+}
+
+.SideDrawer ul li a:hover{
+    color: red;
+}
+
+.home{
+    background-color: rgb(71, 23, 8);
+    border: 2px solid red;
+    color: white;
+}
+
+@keyframes appear{
+    100%{opacity: 1;}
+}
+
+@media  (min-width:760px)
+{
+    .SideDrawer{
+        background-color: #1A0325;
+        z-index: 10;
+        position: unset;
+        color: red;
+        transition: 0.3s ease-in-out;
+        /* height: 100vh; */
+    }
+    .open{
+        width: 30vw;
+    }
+    .permanent {
+        display: inline-block;
+    }
+    .close{
+        display: none;
+    }
+    .SideDrawer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+    .SideDrawer ul li a{
+        text-decoration: none;
+        padding: 15px 30px;
+        display: block;
+        opacity: 0;
+        margin: 10px 0;
+        animation: none;
+        opacity: 1;
+        text-transform: uppercase;
+    }
 }
