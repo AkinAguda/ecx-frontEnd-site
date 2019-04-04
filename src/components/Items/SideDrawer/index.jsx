@@ -15,7 +15,7 @@ const SideDrawer = ({ isOpen, close, permanent = false }) => {
                     { name }
                   </NavLink>
                 </li>
-               
+
               ))
           }
       </ul>
