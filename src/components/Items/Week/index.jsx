@@ -41,6 +41,13 @@ Week.propTypes = {
   openNav: PropTypes.string.isRequired,
   closeNav: PropTypes.string.isRequired,
   isOpen: PropTypes.string.isRequired,
+  week: PropTypes.arrayOf(PropTypes.shape({
+    question: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    answerIndex: PropTypes.number.isRequired,
+    language: PropTypes.string,
+    option: PropTypes.arrayOf(PropTypes.string),
+  })).isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Week);

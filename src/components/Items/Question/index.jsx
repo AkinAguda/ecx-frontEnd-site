@@ -13,8 +13,8 @@ const Question = (props) => {
          questions.map(({
            type, option, question, answerIndex, language,
          }, index) => (
-           <Wrapper key={option}>
-             <h1 className={Cl.question}>
+           <Wrapper>
+             <h1 className={Cl.question} key={option}>
                { `${index + 1}) ` }
                { question }
              </h1>
@@ -38,7 +38,7 @@ const Question = (props) => {
 Question.propTypes = {
   questions: PropTypes.arrayOf(PropTypes.shape({
     0: PropTypes.shape({
-      type: PropTypes.string.isRequired,
+      type: PropTypes.string,
       option: PropTypes.arrayOf.isRequired,
       question: PropTypes.string.isRequired,
     }),
