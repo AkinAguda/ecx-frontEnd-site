@@ -26,7 +26,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className={Cl.header}>
+      <div className={Cl.header} id="head">
         <img src={Logo} alt="logo" className={Cl.Logo} />
         <div className={Cl.hamBurger} onClick={this.toggleSide} onKeyPress={this.toggleSide} tabIndex={0} role="button">
           <div />
