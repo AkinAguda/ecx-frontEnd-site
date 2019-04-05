@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/AkinAguda/ecx-frontEnd-site/static/js/runtime~main.0b7a5ad2.js"
   },
   {
-    "revision": "b9237fc1bd69577b13c5",
-    "url": "/AkinAguda/ecx-frontEnd-site/static/js/main.ab2f69d1.chunk.js"
+    "revision": "439115c209d2abd6dc8b",
+    "url": "/AkinAguda/ecx-frontEnd-site/static/js/main.fe17fe9e.chunk.js"
   },
   {
-    "revision": "3f69d65be8a2202f1364",
-    "url": "/AkinAguda/ecx-frontEnd-site/static/js/2.29033cd2.chunk.js"
+    "revision": "51b4e4a507214ea45a1d",
+    "url": "/AkinAguda/ecx-frontEnd-site/static/js/2.be5d2d91.chunk.js"
   },
   {
-    "revision": "b9237fc1bd69577b13c5",
+    "revision": "439115c209d2abd6dc8b",
     "url": "/AkinAguda/ecx-frontEnd-site/static/css/main.362665af.chunk.css"
   },
   {
-    "revision": "64d656f0bbfd8e515013b86fa1db0919",
+    "revision": "6fc8a698d7c6eacb9ae1cf48d98e9e56",
     "url": "/AkinAguda/ecx-frontEnd-site/index.html"
   }
 ];
