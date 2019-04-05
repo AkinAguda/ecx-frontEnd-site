@@ -1,14 +1,15 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../Logo/Logo';
+import Logo from '../../assets/brand.svg';
 import classes from './index.module.css';
 
 const Home = () => (
   <div className={classes.body}>
-    <div className={classes.logo}>
+    {/* <div className={classes.logo}>
       <Logo />
-    </div>
+    </div> */}
+    <img src={Logo} alt="logo" className={classes.logo} />
     <div className={classes.Body}>
       <p>
       Welcome to the quiz website for the ECX Front End Track.
