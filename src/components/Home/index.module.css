@@ -37,6 +37,7 @@ h1, p{
     text-align: center;
     display: flex;
     margin: 0 10%;
+    z-index: 1000;
     flex-wrap: wrap;
     justify-content: center;
     transform: translateY(-40%)
@@ -64,6 +65,14 @@ footer{
     text-align: center;
     padding-bottom: 20px;
 }
+.logo
+{
+    width:40%;
+    /* position: absolute; */
+    height: 14%;
+    /* float: right; */
+    /* margin-top: 20px; */
+}
 
 @media (min-width:768px)
 {
@@ -87,7 +96,7 @@ footer{
         position: fixed;
         top:50vh;
         left:10vw;
-        width:60%;
+        width:400px;
     }
 
     .base
@@ -109,10 +118,11 @@ footer{
 
     .logo
     {
-        width:35%;
-        position: absolute;
-        right:-10px;
-        top:0;
+        width:30%;
+        /* position: absolute; */
+        height: 9%;
+        float: right;
+        margin-top: 50px;
     }
 
 
