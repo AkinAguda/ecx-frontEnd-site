@@ -61,11 +61,7 @@ footer{
 
 @media (min-width:768px)
 {
-    .base
-    {
-        background-color: white;
-    }
-
+  
     .body
     {
         background: linear-gradient(90deg, white 70%, #1A0325 70%);
@@ -90,8 +86,22 @@ footer{
 
     .base
     {
+        
         height: 0;
         width: 0;
     }
+
+    footer
+    {
+        color:white;
+        position:absolute;
+        bottom: 0;
+        left:65%;
+        width: 35%;
+
+
+    }
+
+
 
 }
