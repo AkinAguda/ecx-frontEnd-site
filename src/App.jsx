@@ -8,7 +8,7 @@ import Routes from './components/routes';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* <Logo /> */}
         <div>
           <Routes />
