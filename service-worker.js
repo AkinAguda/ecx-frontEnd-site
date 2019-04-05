@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "ecx-frontEnd-site/precache-manifest.1abcfc3cd9912595efa7c78164d1a49f.js"
+  "/AkinAguda/ecx-frontEnd-site/precache-manifest.4e5fe14e1acc374129a57d00611b03f5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("ecx-frontEnd-site/index.html", {
+workbox.routing.registerNavigationRoute("/AkinAguda/ecx-frontEnd-site/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
