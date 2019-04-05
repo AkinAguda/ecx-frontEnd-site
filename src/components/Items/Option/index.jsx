@@ -47,11 +47,11 @@ class Option extends Component {
           {
                 type === 'text'
                   ? (
-                    <div className={containerCLass}>
+                    <div className={containerCLass} onClick={this.selected.bind(this, option, answer)} onKeyPress={this.selected} role="button" tabIndex={0}>
                       <div className={circleClass}>
                         <div className={innerClass} />
                       </div>
-                      <div className={Cl.option} onClick={this.selected.bind(this, option, answer)} onKeyPress={this.selected} role="button" tabIndex={0}>{option}</div>
+                      <div className={Cl.option}>{option}</div>
                     </div>
                   )
                   : type === 'snippet'
