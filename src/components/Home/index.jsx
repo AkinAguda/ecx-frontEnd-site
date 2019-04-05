@@ -18,10 +18,10 @@ const Home = () => (
     </div>
     <div className={classes.base}>
       <div className={classes.tests}>
-        <NavLink to="/week-one" exact>Week1</NavLink>
+        <NavLink to="/week-one" exact>Week 1</NavLink>
         <br />
-        <NavLink to="/week-two" exact>Week2</NavLink>
-        <NavLink to="/week-three" exact>Week3</NavLink>
+        <NavLink to="/week-two" exact>Week 2</NavLink>
+        <NavLink to="/week-three" exact>Week 3</NavLink>
       </div>
     </div>
     <footer>Built by Irene and Akin</footer>
