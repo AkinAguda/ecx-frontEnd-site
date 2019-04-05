@@ -1,14 +1,14 @@
 {
-  "main.css": "/AkinAguda/ecx-frontEnd-site/static/css/main.362665af.chunk.css",
-  "main.js": "/AkinAguda/ecx-frontEnd-site/static/js/main.fe17fe9e.chunk.js",
-  "main.js.map": "/AkinAguda/ecx-frontEnd-site/static/js/main.fe17fe9e.chunk.js.map",
-  "runtime~main.js": "/AkinAguda/ecx-frontEnd-site/static/js/runtime~main.0b7a5ad2.js",
-  "runtime~main.js.map": "/AkinAguda/ecx-frontEnd-site/static/js/runtime~main.0b7a5ad2.js.map",
-  "static/js/2.be5d2d91.chunk.js": "/AkinAguda/ecx-frontEnd-site/static/js/2.be5d2d91.chunk.js",
-  "static/js/2.be5d2d91.chunk.js.map": "/AkinAguda/ecx-frontEnd-site/static/js/2.be5d2d91.chunk.js.map",
-  "index.html": "/AkinAguda/ecx-frontEnd-site/index.html",
-  "precache-manifest.aee0832c4c2fbd2add4fc75952986fc7.js": "/AkinAguda/ecx-frontEnd-site/precache-manifest.aee0832c4c2fbd2add4fc75952986fc7.js",
-  "service-worker.js": "/AkinAguda/ecx-frontEnd-site/service-worker.js",
-  "static/css/main.362665af.chunk.css.map": "/AkinAguda/ecx-frontEnd-site/static/css/main.362665af.chunk.css.map",
-  "static/media/brand.svg": "/AkinAguda/ecx-frontEnd-site/static/media/brand.50e047d0.svg"
+  "main.css": "/ecx-frontEnd-site/static/css/main.362665af.chunk.css",
+  "main.js": "/ecx-frontEnd-site/static/js/main.03965583.chunk.js",
+  "main.js.map": "/ecx-frontEnd-site/static/js/main.03965583.chunk.js.map",
+  "runtime~main.js": "/ecx-frontEnd-site/static/js/runtime~main.5231336b.js",
+  "runtime~main.js.map": "/ecx-frontEnd-site/static/js/runtime~main.5231336b.js.map",
+  "static/js/2.be5d2d91.chunk.js": "/ecx-frontEnd-site/static/js/2.be5d2d91.chunk.js",
+  "static/js/2.be5d2d91.chunk.js.map": "/ecx-frontEnd-site/static/js/2.be5d2d91.chunk.js.map",
+  "index.html": "/ecx-frontEnd-site/index.html",
+  "precache-manifest.81f78460f3946a25a880cf3c2966ff69.js": "/ecx-frontEnd-site/precache-manifest.81f78460f3946a25a880cf3c2966ff69.js",
+  "service-worker.js": "/ecx-frontEnd-site/service-worker.js",
+  "static/css/main.362665af.chunk.css.map": "/ecx-frontEnd-site/static/css/main.362665af.chunk.css.map",
+  "static/media/brand.svg": "/ecx-frontEnd-site/static/media/brand.50e047d0.svg"
 }
