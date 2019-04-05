@@ -1,7 +1,7 @@
 import React from 'react';
-import { week2 } from '../../utils';
+import { week3 } from '../../utils';
 import Week from '../Items/Week';
 
-const week = () => <Week week={week2} />;
+const week = () => <Week week={week3} />;
 
 export default week;
