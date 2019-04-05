@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Home from './Home';
 import weekOne from './EcxTests/week1';
 import weekTwo from './EcxTests/week2';
+import weekThree from './EcxTests/week3';
 import classes from './routes.module.css';
 
 const Routes = () => (
@@ -10,6 +11,7 @@ const Routes = () => (
     <Route path="/" exact component={Home} />
     <Route path="/week-one" component={weekOne} />
     <Route path="/week-two" component={weekTwo} />
+    <Route path="/week-three" component={weekThree} />
   </div>
 );
 
@@ -27,6 +29,11 @@ export const paths = [{
   pathname: '/week-two',
   hash: '#test',
   name: 'week two',
+},
+{
+  pathname: '/week-three',
+  hash: '#test',
+  name: 'week three',
 },
 ];
 
