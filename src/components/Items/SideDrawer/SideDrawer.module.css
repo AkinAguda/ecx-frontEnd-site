@@ -60,6 +60,7 @@
         color: red;
         transition: 0.3s ease-in-out;
         /* height: 100vh; */
+        
     }
     .open{
         width: 30vw;
@@ -74,6 +75,9 @@
         list-style-type: none;
         margin: 0;
         padding: 20px 0 0 0;
+        position: fixed;
+        top:20vh;
+        width:25vw;
     }
     .SideDrawer ul li a{
         text-decoration: none;
