@@ -99,7 +99,14 @@ footer{
         left:65%;
         width: 35%;
 
+    }
 
+    .logo
+    {
+        width:35%;
+        position: absolute;
+        right:-10px;
+        top:0;
     }
 
 
