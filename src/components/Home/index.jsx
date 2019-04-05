@@ -27,9 +27,9 @@ const Home = () => (
     </div>
     <div className={classes.base}>
       <div className={classes.tests}>
-        <NavLink to="/week-one">Week1</NavLink>
+        <NavLink to="/week-one">Week 1</NavLink>
         <br />
-        <NavLink to="/week-two">Week2</NavLink>
+        <NavLink to="/week-two">Week 2</NavLink>
       </div>
     </div>
     <footer>Built by Irene and Akin</footer>
