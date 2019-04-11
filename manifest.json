@@ -14,6 +14,5 @@
   "theme_color": "#1A0325",
   "background_color": "#1A0325",
   "orientation": "portrait-primary",
-  "description": "This is the ECX-Front-End Quiz app",
-  "scope": "/"
+  "description": "This is the ECX-Front-End Quiz app"
 }
