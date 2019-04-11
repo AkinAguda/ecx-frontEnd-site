@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-nested-ternary */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -55,7 +54,7 @@ class Option extends Component {
                     </div>
                   )
                   : type === 'snippet'
-                    ? (
+                    && (
                       <SyntaxHighlighter
                         className={snippetClass}
                         language={language}
@@ -66,7 +65,6 @@ class Option extends Component {
                         {option}
                       </SyntaxHighlighter>
                     )
-                    : ''
             }
         </div>
       );
