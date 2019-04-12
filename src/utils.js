@@ -124,3 +124,47 @@ export const week3 = [
     answerIndex: 0,
   },
 ];
+
+export const week4 = [
+  {
+    question: 'What is the full meaning of CSS?',
+    option: ['Comparable Style Selectors', 'Colorful Seperate Styles', 'Cascading Style Sheets', 'Creative Style Selectors'],
+    answerIndex: 2,
+  },
+  {
+    question: 'What is the correct way to link a stylesheet in the html?',
+    type: 'snippet',
+    language: 'html',
+    option: ['The person who said it', 'Nothing', 'cite isn\'t used in blockquote', 'A link to the original quote'],
+    answerIndex: 3,
+  },
+  {
+    question: 'Which of these is the correct way to write an abbreviation?',
+    type: 'snippet',
+    language: 'html',
+    option: ['<abbreviation title="World Health Organisation">WHO</abbreviation>', '<abbr title="World Health Organisation">WHO</abbr>', '<abb title="World Health Organisation">WHO</abb>', '<abbreviation name="World Health Organisation">WHO</abbreviation>'],
+    answerIndex: 1,
+  },
+  {
+    question: 'Why is it important to comment your code?',
+    option: ['To make your code more understandable', 'To make your code run faster', 'To make your code cleaner', 'To speed up code execution'],
+    answerIndex: 0,
+  },
+  {
+    question: 'What is the maximum value any of the colors can have in rgb(10, 20, 30)',
+    option: ['100', '225', '125', '255'],
+    answerIndex: 3,
+  },
+  {
+    question: 'What does the "a" in "rgba" define?',
+    option: ['border', 'hue', 'opacity', 'light intensity'],
+    answerIndex: 2,
+  },
+  {
+    question: 'Which of these is the correct way to make a red heading with a border round it?',
+    type: 'snippet',
+    language: 'css',
+    option: ['h1 {color: red;\nborder: 1px solid}', 'h1 {color: red;\nborder: solid red}', 'h1 {color: red;\nborder-right: solid red}'],
+    answerIndex: 0,
+  },
+];
