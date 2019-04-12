@@ -25,6 +25,7 @@
     list-style-type: none;
     margin: 0;
     padding: 75px 0 0 0;
+   
 }
 
 .SideDrawer ul li a{
@@ -35,10 +36,16 @@
     margin: 10px 0;
     animation: appear 1.4s forwards;
     text-transform: uppercase;
+    color:#65edf7;
 }
 
 .SideDrawer ul li a:hover{
     color: red;
+}
+
+.SideDrawer ul li a:active
+{
+    color:white;
 }
 
 .home{
