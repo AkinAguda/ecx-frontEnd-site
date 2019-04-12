@@ -23,6 +23,7 @@ const Home = () => (
         <br />
         <NavLink to="/week-two" exact>Week 2</NavLink>
         <NavLink to="/week-three" exact>Week 3</NavLink>
+        <NavLink to="/week-four" exact>Week 4</NavLink>
       </div>
     </div>
     <footer>Built by Irene and Akin</footer>

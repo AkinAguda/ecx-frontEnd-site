@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable linebreak-style */
 export const week1 = [
   {
@@ -122,5 +123,106 @@ export const week3 = [
     language: 'css',
     option: ['h1 {color: red;\nborder: 1px solid}', 'h1 {color: red;\nborder: solid red}', 'h1 {color: red;\nborder-right: solid red}'],
     answerIndex: 0,
+  },
+];
+
+export const week4 = [
+  {
+    question: 'What is the full meaning of CSS?',
+    option: ['Comparable Style Selectors', 'Colorful Seperate Styles', 'Cascading Style Sheets', 'Creative Style Selectors'],
+    answerIndex: 2,
+  },
+  {
+    question: 'What is the correct way to link a stylesheet in the html?',
+    type: 'snippet',
+    language: 'html',
+    option: ['<link rel="stylesheet" href="style.css">', '<style rel="stylesheet" href="style.css">',
+      '<link to="index.html" rel="stylesheet" href="style.css" type="external">', '<a src="style.css">'],
+    answerIndex: 0,
+  },
+  {
+    question: 'Which of these selectorrs will style all paragraphs to have a font color of red ?',
+    type: 'snippet',
+    language: 'css',
+    option: ['p \n{\n  font-color:red; \n}', 'para \n{\n  text-color:red; \n}', 'p \n{\n  color:red; \n}', 'paragraph \n{\n  font-color:red; \n}'],
+    answerIndex: 2,
+  },
+  {
+    question: 'Which of the following has the highest specificity?',
+    type: 'snippet',
+    language: 'css',
+    option: ['p { \n  /*code goes here*/\n }', 'p.red { \n  /*code goes here*/\n }', '#red{ \n  /*code goes here*/\n }', 'p#red{ \n  /*code goes here*/\n }'],
+    answerIndex: 3,
+  },
+  {
+    question: 'Which of  these will make an element take up the full size available?',
+    type: 'snippet',
+    language: 'css',
+    option: ['display:full;', 'display:full-size;', 'display:block;', 'display:100%;'],
+    answerIndex: 2,
+  },
+  {
+    question: 'What is the corrrect order for styling links?',
+    type: 'snippet',
+    language: 'css',
+    option: [`a:link {
+      color: red;
+  }
+  a:visited {
+      color: green;
+  }
+  a:hover {
+      color: hotpink;
+  }
+  
+  a:active {
+      color: blue;
+  }`,
+    `a:active {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+
+a:link {
+    color: blue;
+}`,
+    `a:active {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:link {
+  color: hotpink;
+}
+
+a:hover {
+  color: blue;
+}`,
+    `a:visited {
+  color: red;
+}
+a:link {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}`,
+    ],
+    answerIndex: 0,
+  },
+  {
+    question: 'CSS grows quickly',
+    option: ['Nay', 'Yay'],
+    answerIndex: 1,
   },
 ];
