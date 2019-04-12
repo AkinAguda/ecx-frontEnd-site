@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable linebreak-style */
 export const week1 = [
   {
@@ -135,36 +136,93 @@ export const week4 = [
     question: 'What is the correct way to link a stylesheet in the html?',
     type: 'snippet',
     language: 'html',
-    option: ['The person who said it', 'Nothing', 'cite isn\'t used in blockquote', 'A link to the original quote'],
-    answerIndex: 3,
-  },
-  {
-    question: 'Which of these is the correct way to write an abbreviation?',
-    type: 'snippet',
-    language: 'html',
-    option: ['<abbreviation title="World Health Organisation">WHO</abbreviation>', '<abbr title="World Health Organisation">WHO</abbr>', '<abb title="World Health Organisation">WHO</abb>', '<abbreviation name="World Health Organisation">WHO</abbreviation>'],
-    answerIndex: 1,
-  },
-  {
-    question: 'Why is it important to comment your code?',
-    option: ['To make your code more understandable', 'To make your code run faster', 'To make your code cleaner', 'To speed up code execution'],
+    option: ['<link rel="stylesheet" href="style.css">', '<style rel="stylesheet" href="style.css">',
+      '<link to="index.html" rel="stylesheet" href="style.css" type="external">', '<a src="style.css">'],
     answerIndex: 0,
   },
   {
-    question: 'What is the maximum value any of the colors can have in rgb(10, 20, 30)',
-    option: ['100', '225', '125', '255'],
-    answerIndex: 3,
-  },
-  {
-    question: 'What does the "a" in "rgba" define?',
-    option: ['border', 'hue', 'opacity', 'light intensity'],
+    question: 'Which of these selectorrs will style all paragraphs to have a font color of red ?',
+    type: 'snippet',
+    language: 'css',
+    option: ['p \n{\n  font-color:red; \n}', 'para \n{\n  text-color:red; \n}', 'p \n{\n  color:red; \n}', 'paragraph \n{\n  font-color:red; \n}'],
     answerIndex: 2,
   },
   {
-    question: 'Which of these is the correct way to make a red heading with a border round it?',
+    question: 'Which of the following has the highest specificity?',
     type: 'snippet',
     language: 'css',
-    option: ['h1 {color: red;\nborder: 1px solid}', 'h1 {color: red;\nborder: solid red}', 'h1 {color: red;\nborder-right: solid red}'],
+    option: ['p { \n  /*code goes here*/\n }', 'p.red { \n  /*code goes here*/\n }', '#red{ \n  /*code goes here*/\n }', 'p#red{ \n  /*code goes here*/\n }'],
+    answerIndex: 3,
+  },
+  {
+    question: 'Which of  these will make an element take up the full size available?',
+    type: 'snippet',
+    language: 'css',
+    option: ['display:full;', 'display:full-size;', 'display:block;', 'display:100%;'],
+    answerIndex: 2,
+  },
+  {
+    question: 'What is the corrrect order for styling links?',
+    type: 'snippet',
+    language: 'css',
+    option: [`a:link {
+      color: red;
+  }
+  a:visited {
+      color: green;
+  }
+  a:hover {
+      color: hotpink;
+  }
+  
+  a:active {
+      color: blue;
+  }`,
+    `a:active {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+
+a:link {
+    color: blue;
+}`,
+    `a:active {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:link {
+  color: hotpink;
+}
+
+a:hover {
+  color: blue;
+}`,
+    `a:visited {
+  color: red;
+}
+a:link {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}`,
+    ],
     answerIndex: 0,
+  },
+  {
+    question: 'CSS grows quickly',
+    option: ['Nay', 'Yay'],
+    answerIndex: 1,
   },
 ];

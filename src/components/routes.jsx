@@ -4,6 +4,7 @@ import Home from './Home';
 import weekOne from './EcxTests/week1';
 import weekTwo from './EcxTests/week2';
 import weekThree from './EcxTests/week3';
+import weekFour from './EcxTests/week4';
 import classes from './routes.module.css';
 
 const Routes = () => (
@@ -12,6 +13,7 @@ const Routes = () => (
     <Route path="/week-one" component={weekOne} />
     <Route path="/week-two" component={weekTwo} />
     <Route path="/week-three" component={weekThree} />
+    <Route path="/week-four" component={weekFour} />
   </div>
 );
 
