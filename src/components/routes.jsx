@@ -37,6 +37,11 @@ export const paths = [{
   hash: '#test',
   name: 'week three',
 },
+{
+  pathname: '/week-four',
+  hash: '#test',
+  name: 'week four',
+},
 ];
 
 export default Routes;

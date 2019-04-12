@@ -17,7 +17,9 @@ class Week extends Component {
   }
 
   render() {
-    const { openNav, closeNav, isOpen, week } = this.props;
+    const {
+      openNav, closeNav, isOpen, week,
+    } = this.props;
     return (
       <Wrapper>
         <Header open={openNav} close={closeNav} />
