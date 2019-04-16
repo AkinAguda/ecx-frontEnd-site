@@ -4,9 +4,9 @@
   "name": "ECX Quiz App",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "fav.png",
       "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": ".",
