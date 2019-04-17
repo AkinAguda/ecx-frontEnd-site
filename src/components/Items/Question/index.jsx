@@ -10,10 +10,7 @@ const Question = (props) => {
   return (
     <div className={Cl.container} id="test">
       <Wrapper>
-        {/* <div className={Cl.drawer}> */}
         <SideDrawer isOpen permanent />
-        {/* </div> */}
-
         <div className={Cl.rightSide}>
           {
          questions.map(({
@@ -44,13 +41,15 @@ const Question = (props) => {
 };
 
 Question.propTypes = {
-  questions: PropTypes.arrayOf(PropTypes.shape({
-    0: PropTypes.shape({
-      type: PropTypes.string,
-      option: PropTypes.arrayOf.isRequired,
+  questions: PropTypes.arrayOf(
+    PropTypes.shape({
       question: PropTypes.string.isRequired,
+      option: PropTypes.arrayOf(PropTypes.string).isRequired,
+      language: PropTypes.string,
+      answerIndex: PropTypes.number.isRequired,
+      type: PropTypes.string,
     }),
-  })).isRequired,
+  ).isRequired,
 };
 
 export default Question;

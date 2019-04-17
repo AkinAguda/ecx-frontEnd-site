@@ -71,10 +71,14 @@ class Option extends Component {
     }
 }
 Option.propTypes = {
-  option: PropTypes.arrayOf.isRequired,
-  type: PropTypes.string.isRequired,
+  option: PropTypes.string.isRequired,
+  type: PropTypes.string,
   answer: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
+  language: PropTypes.string,
+};
+Option.defaultProps = {
+  type: 'text',
+  language: null,
 };
 
 export default Option;
