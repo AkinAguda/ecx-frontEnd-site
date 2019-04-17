@@ -55,7 +55,7 @@ export const week2 = [
     answerIndex: 1,
   },
   {
-    question: 'Where is the page tite that shows in the browser tab defined?',
+    question: 'Where is the page title that shows in the browser tab defined?',
     option: ['In the head tag', 'In the body tag', 'Right above the Document type', 'In the footer'],
     answerIndex: 0,
   },
@@ -141,7 +141,7 @@ export const week4 = [
     answerIndex: 0,
   },
   {
-    question: 'Which of these selectorrs will style all paragraphs to have a font color of red ?',
+    question: 'Which of these selectors will style all paragraphs to have a font color of red ?',
     type: 'snippet',
     language: 'css',
     option: ['p \n{\n  font-color:red; \n}', 'para \n{\n  text-color:red; \n}', 'p \n{\n  color:red; \n}', 'paragraph \n{\n  font-color:red; \n}'],
@@ -155,7 +155,7 @@ export const week4 = [
     answerIndex: 3,
   },
   {
-    question: 'Which of  these will make an element take up the full size available?',
+    question: 'Which of these will make an element take up the full size available?',
     type: 'snippet',
     language: 'css',
     option: ['display:full;', 'display:full-size;', 'display:block;', 'display:100%;'],

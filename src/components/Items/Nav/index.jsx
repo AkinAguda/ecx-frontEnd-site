@@ -1,5 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Cl from './Nav.module.css';
 import Logo from '../../../assets/brand.svg';
 
@@ -37,4 +38,10 @@ class Nav extends Component {
     );
   }
 }
+
+Nav.propTypes = {
+  open: PropTypes.func.isRequired,
+  close: PropTypes.func.isRequired,
+};
+
 export default Nav;
