@@ -17,7 +17,9 @@ class Week extends Component {
   }
 
   render() {
-    const { openNav, closeNav, isOpen, week } = this.props;
+    const {
+      openNav, closeNav, isOpen, week,
+    } = this.props;
     return (
       <Wrapper>
         <Header open={openNav} close={closeNav} />
@@ -38,9 +40,9 @@ const mapDispatchToProps = dispatch => ({
 });
 
 Week.propTypes = {
-  openNav: PropTypes.string.isRequired,
-  closeNav: PropTypes.string.isRequired,
-  isOpen: PropTypes.string.isRequired,
+  openNav: PropTypes.func.isRequired,
+  closeNav: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
   week: PropTypes.arrayOf(PropTypes.shape({
     question: PropTypes.string.isRequired,
     type: PropTypes.string,
