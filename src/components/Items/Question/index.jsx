@@ -5,14 +5,12 @@ import Option from '../Option';
 import SideDrawer from '../SideDrawer';
 import Wrapper from '../../HOCs/Wrapper';
 
-const Question = (props) => {
-  const { questions } = props;
-  return (
-    <div className={Cl.container} id="test">
-      <Wrapper>
-        <SideDrawer isOpen permanent />
-        <div className={Cl.rightSide}>
-          {
+const Question = ({ questions }) => (
+  <div className={Cl.container} id="test">
+    <Wrapper>
+      <SideDrawer isOpen permanent />
+      <div className={Cl.rightSide}>
+        {
          questions.map(({
            type, option, question, answerIndex, language,
          }, index) => (
@@ -33,12 +31,11 @@ const Question = (props) => {
            </Wrapper>
          ))
          }
-        </div>
+      </div>
 
-      </Wrapper>
-    </div>
-  );
-};
+    </Wrapper>
+  </div>
+);
 
 Question.propTypes = {
   questions: PropTypes.arrayOf(
